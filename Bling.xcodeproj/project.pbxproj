@@ -249,7 +249,7 @@
 				TargetAttributes = {
 					088E47721C81AC2F0069C6FD = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = E8KJSP4MZ4;
+						DevelopmentTeam = R94F524VGS;
 					};
 					088E47861C81AC300069C6FD = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -472,8 +472,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Bling/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saci.Launch-Screen";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.fandango.hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bling/Bling-Bridging-Header.h";
@@ -491,8 +492,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Bling/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saci.Launch-Screen";
+				PRODUCT_BUNDLE_IDENTIFIER = hack.fandango.hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bling/Bling-Bridging-Header.h";

@@ -3,8 +3,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class LocationViewController: UIViewController {
+class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
     //Link UI elements here
     
@@ -14,7 +15,7 @@ class LocationViewController: UIViewController {
     
     @IBOutlet weak var question4Label: UILabel!
     
-    
+    var locationManager:CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +74,17 @@ class LocationViewController: UIViewController {
         
     }//End of viewDidAppear
     
+    @IBAction func allowLocation(sender: AnyObject) {
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        self.performSegueWithIdentifier("GoToMain", sender: self)
+
+    }
     
     
     

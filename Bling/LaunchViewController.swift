@@ -17,6 +17,8 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "timeToMoveOn", userInfo: nil, repeats: false)
+        
     } //End of viewDidLoad
     
     
@@ -50,7 +52,9 @@ class LaunchViewController: UIViewController {
         
     }//End of viewDidAppear
     
-    
+    func timeToMoveOn() {
+        self.performSegueWithIdentifier("goToNext", sender: self)
+    }
     
     
 } //End of class
