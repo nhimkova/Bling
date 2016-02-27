@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		088E47771C81AC2F0069C6FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47761C81AC2F0069C6FD /* AppDelegate.swift */; };
+		088E47791C81AC2F0069C6FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47781C81AC2F0069C6FD /* ViewController.swift */; };
+		088E477C1C81AC2F0069C6FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088E477A1C81AC2F0069C6FD /* Main.storyboard */; };
+		088E477E1C81AC2F0069C6FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088E477D1C81AC2F0069C6FD /* Assets.xcassets */; };
+		088E47811C81AC2F0069C6FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088E477F1C81AC2F0069C6FD /* LaunchScreen.storyboard */; };
+		088E478C1C81AC300069C6FD /* BlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E478B1C81AC300069C6FD /* BlingTests.swift */; };
+		088E47971C81AC300069C6FD /* BlingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47961C81AC300069C6FD /* BlingUITests.swift */; };
+		088E47A51C81AD640069C6FD /* QredoXDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E47A41C81AD640069C6FD /* QredoXDK.framework */; };
+		088E47A61C81AD640069C6FD /* QredoXDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 088E47A41C81AD640069C6FD /* QredoXDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		088E47881C81AC300069C6FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 088E476B1C81AC2F0069C6FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 088E47721C81AC2F0069C6FD;
+			remoteInfo = Bling;
+		};
+		088E47931C81AC300069C6FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 088E476B1C81AC2F0069C6FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 088E47721C81AC2F0069C6FD;
+			remoteInfo = Bling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		088E47A71C81AD640069C6FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				088E47A61C81AD640069C6FD /* QredoXDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		088E47731C81AC2F0069C6FD /* Bling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		088E47761C81AC2F0069C6FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		088E47781C81AC2F0069C6FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		088E477B1C81AC2F0069C6FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		088E477D1C81AC2F0069C6FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		088E47801C81AC2F0069C6FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		088E47821C81AC2F0069C6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088E47871C81AC300069C6FD /* BlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		088E478B1C81AC300069C6FD /* BlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlingTests.swift; sourceTree = "<group>"; };
+		088E478D1C81AC300069C6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088E47921C81AC300069C6FD /* BlingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		088E47961C81AC300069C6FD /* BlingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlingUITests.swift; sourceTree = "<group>"; };
+		088E47981C81AC300069C6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088E47A41C81AD640069C6FD /* QredoXDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QredoXDK.framework; sourceTree = "<group>"; };
+		088E47A81C81ADA20069C6FD /* Bling-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bling-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		088E47701C81AC2F0069C6FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088E47A51C81AD640069C6FD /* QredoXDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088E47841C81AC300069C6FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088E478F1C81AC300069C6FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088E476A1C81AC2F0069C6FD = {
+			isa = PBXGroup;
+			children = (
+				088E47A41C81AD640069C6FD /* QredoXDK.framework */,
+				088E47751C81AC2F0069C6FD /* Bling */,
+				088E478A1C81AC300069C6FD /* BlingTests */,
+				088E47951C81AC300069C6FD /* BlingUITests */,
+				088E47741C81AC2F0069C6FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		088E47741C81AC2F0069C6FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				088E47731C81AC2F0069C6FD /* Bling.app */,
+				088E47871C81AC300069C6FD /* BlingTests.xctest */,
+				088E47921C81AC300069C6FD /* BlingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		088E47751C81AC2F0069C6FD /* Bling */ = {
+			isa = PBXGroup;
+			children = (
+				088E47761C81AC2F0069C6FD /* AppDelegate.swift */,
+				088E47781C81AC2F0069C6FD /* ViewController.swift */,
+				088E477A1C81AC2F0069C6FD /* Main.storyboard */,
+				088E477D1C81AC2F0069C6FD /* Assets.xcassets */,
+				088E477F1C81AC2F0069C6FD /* LaunchScreen.storyboard */,
+				088E47821C81AC2F0069C6FD /* Info.plist */,
+				088E47A81C81ADA20069C6FD /* Bling-Bridging-Header.h */,
+			);
+			path = Bling;
+			sourceTree = "<group>";
+		};
+		088E478A1C81AC300069C6FD /* BlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				088E478B1C81AC300069C6FD /* BlingTests.swift */,
+				088E478D1C81AC300069C6FD /* Info.plist */,
+			);
+			path = BlingTests;
+			sourceTree = "<group>";
+		};
+		088E47951C81AC300069C6FD /* BlingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				088E47961C81AC300069C6FD /* BlingUITests.swift */,
+				088E47981C81AC300069C6FD /* Info.plist */,
+			);
+			path = BlingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		088E47721C81AC2F0069C6FD /* Bling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088E479B1C81AC300069C6FD /* Build configuration list for PBXNativeTarget "Bling" */;
+			buildPhases = (
+				088E476F1C81AC2F0069C6FD /* Sources */,
+				088E47701C81AC2F0069C6FD /* Frameworks */,
+				088E47711C81AC2F0069C6FD /* Resources */,
+				088E47A71C81AD640069C6FD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bling;
+			productName = Bling;
+			productReference = 088E47731C81AC2F0069C6FD /* Bling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		088E47861C81AC300069C6FD /* BlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088E479E1C81AC300069C6FD /* Build configuration list for PBXNativeTarget "BlingTests" */;
+			buildPhases = (
+				088E47831C81AC300069C6FD /* Sources */,
+				088E47841C81AC300069C6FD /* Frameworks */,
+				088E47851C81AC300069C6FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				088E47891C81AC300069C6FD /* PBXTargetDependency */,
+			);
+			name = BlingTests;
+			productName = BlingTests;
+			productReference = 088E47871C81AC300069C6FD /* BlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		088E47911C81AC300069C6FD /* BlingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088E47A11C81AC300069C6FD /* Build configuration list for PBXNativeTarget "BlingUITests" */;
+			buildPhases = (
+				088E478E1C81AC300069C6FD /* Sources */,
+				088E478F1C81AC300069C6FD /* Frameworks */,
+				088E47901C81AC300069C6FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				088E47941C81AC300069C6FD /* PBXTargetDependency */,
+			);
+			name = BlingUITests;
+			productName = BlingUITests;
+			productReference = 088E47921C81AC300069C6FD /* BlingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		088E476B1C81AC2F0069C6FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Quynh;
+				TargetAttributes = {
+					088E47721C81AC2F0069C6FD = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = R94F524VGS;
+					};
+					088E47861C81AC300069C6FD = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = R94F524VGS;
+						TestTargetID = 088E47721C81AC2F0069C6FD;
+					};
+					088E47911C81AC300069C6FD = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = R94F524VGS;
+						TestTargetID = 088E47721C81AC2F0069C6FD;
+					};
+				};
+			};
+			buildConfigurationList = 088E476E1C81AC2F0069C6FD /* Build configuration list for PBXProject "Bling" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 088E476A1C81AC2F0069C6FD;
+			productRefGroup = 088E47741C81AC2F0069C6FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				088E47721C81AC2F0069C6FD /* Bling */,
+				088E47861C81AC300069C6FD /* BlingTests */,
+				088E47911C81AC300069C6FD /* BlingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		088E47711C81AC2F0069C6FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088E47811C81AC2F0069C6FD /* LaunchScreen.storyboard in Resources */,
+				088E477E1C81AC2F0069C6FD /* Assets.xcassets in Resources */,
+				088E477C1C81AC2F0069C6FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088E47851C81AC300069C6FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088E47901C81AC300069C6FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		088E476F1C81AC2F0069C6FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088E47791C81AC2F0069C6FD /* ViewController.swift in Sources */,
+				088E47771C81AC2F0069C6FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088E47831C81AC300069C6FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088E478C1C81AC300069C6FD /* BlingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088E478E1C81AC300069C6FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088E47971C81AC300069C6FD /* BlingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		088E47891C81AC300069C6FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 088E47721C81AC2F0069C6FD /* Bling */;
+			targetProxy = 088E47881C81AC300069C6FD /* PBXContainerItemProxy */;
+		};
+		088E47941C81AC300069C6FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 088E47721C81AC2F0069C6FD /* Bling */;
+			targetProxy = 088E47931C81AC300069C6FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		088E477A1C81AC2F0069C6FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				088E477B1C81AC2F0069C6FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		088E477F1C81AC2F0069C6FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				088E47801C81AC2F0069C6FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		088E47991C81AC300069C6FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		088E479A1C81AC300069C6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		088E479C1C81AC300069C6FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Bling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Bling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bling/Bling-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		088E479D1C81AC300069C6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Bling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Bling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bling/Bling-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		088E479F1C81AC300069C6FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.BlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bling.app/Bling";
+			};
+			name = Debug;
+		};
+		088E47A01C81AC300069C6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.BlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bling.app/Bling";
+			};
+			name = Release;
+		};
+		088E47A21C81AC300069C6FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BlingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.BlingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Bling;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		088E47A31C81AC300069C6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BlingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.BlingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Bling;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		088E476E1C81AC2F0069C6FD /* Build configuration list for PBXProject "Bling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088E47991C81AC300069C6FD /* Debug */,
+				088E479A1C81AC300069C6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		088E479B1C81AC300069C6FD /* Build configuration list for PBXNativeTarget "Bling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088E479C1C81AC300069C6FD /* Debug */,
+				088E479D1C81AC300069C6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		088E479E1C81AC300069C6FD /* Build configuration list for PBXNativeTarget "BlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088E479F1C81AC300069C6FD /* Debug */,
+				088E47A01C81AC300069C6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		088E47A11C81AC300069C6FD /* Build configuration list for PBXNativeTarget "BlingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088E47A21C81AC300069C6FD /* Debug */,
+				088E47A31C81AC300069C6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 088E476B1C81AC2F0069C6FD /* Project object */;
+}
