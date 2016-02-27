@@ -8,6 +8,9 @@ class GenderViewController: UIViewController {
     
     //Link UI elements here
     
+    @IBOutlet weak var maleButton: UIButton!
+    @IBOutlet weak var femaleButton: UIButton!
+    @IBOutlet weak var naButton: UIButton!
     
     
     

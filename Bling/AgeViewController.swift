@@ -8,6 +8,9 @@ class AgeViewController: UIViewController {
     
     //Link UI elements here
     
+    @IBOutlet weak var under17Button: UIButton!
+    @IBOutlet weak var under29Button: UIButton!
+    @IBOutlet weak var from30Button: UIButton!
     
     
     
