@@ -23,6 +23,8 @@
 		088E47B21C81B57E0069C6FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47B11C81B57E0069C6FD /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		088E47B41C81B5920069C6FD /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47B31C81B5920069C6FD /* LaunchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		088E47B61C81B5A10069C6FD /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47B51C81B5A10069C6FD /* EmergencyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47C81C81CCA80069C6FD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47C71C81CCA80069C6FD /* ChatViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47D51C81D4AA0069C6FD /* MyQredo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47D41C81D4AA0069C6FD /* MyQredo.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		088E47B11C81B57E0069C6FD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		088E47B31C81B5920069C6FD /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		088E47B51C81B5A10069C6FD /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		088E47C71C81CCA80069C6FD /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		088E47D41C81D4AA0069C6FD /* MyQredo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQredo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 				088E477F1C81AC2F0069C6FD /* LaunchScreen.storyboard */,
 				088E47821C81AC2F0069C6FD /* Info.plist */,
 				088E47A81C81ADA20069C6FD /* Bling-Bridging-Header.h */,
+				088E47D41C81D4AA0069C6FD /* MyQredo.swift */,
 			);
 			path = Bling;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				088E47B11C81B57E0069C6FD /* MainViewController.swift */,
 				088E47B31C81B5920069C6FD /* LaunchViewController.swift */,
 				088E47B51C81B5A10069C6FD /* EmergencyViewController.swift */,
+				088E47C71C81CCA80069C6FD /* ChatViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -317,6 +323,8 @@
 				088E47B61C81B5A10069C6FD /* EmergencyViewController.swift in Sources */,
 				088E47771C81AC2F0069C6FD /* AppDelegate.swift in Sources */,
 				088E47AE1C81B55C0069C6FD /* ContactViewController.swift in Sources */,
+				088E47D51C81D4AA0069C6FD /* MyQredo.swift in Sources */,
+				088E47C81C81CCA80069C6FD /* ChatViewController.swift in Sources */,
 				088E47B41C81B5920069C6FD /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +471,7 @@
 				);
 				INFOPLIST_FILE = Bling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Bling;
+				PRODUCT_BUNDLE_IDENTIFIER = hack.fandango.hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bling/Bling-Bridging-Header.h";
 			};
@@ -479,7 +487,7 @@
 				);
 				INFOPLIST_FILE = Bling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Nhimo.Bling;
+				PRODUCT_BUNDLE_IDENTIFIER = hack.fandango.hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bling/Bling-Bridging-Header.h";
 			};
@@ -552,6 +560,7 @@
 				088E479D1C81AC300069C6FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		088E479E1C81AC300069C6FD /* Build configuration list for PBXNativeTarget "BlingTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +569,7 @@
 				088E47A01C81AC300069C6FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		088E47A11C81AC300069C6FD /* Build configuration list for PBXNativeTarget "BlingUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +578,7 @@
 				088E47A31C81AC300069C6FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

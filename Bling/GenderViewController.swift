@@ -13,10 +13,6 @@ class GenderViewController: UIViewController {
     @IBOutlet weak var naButton: UIButton!
     
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
