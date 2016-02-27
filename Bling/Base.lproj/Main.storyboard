@@ -118,7 +118,7 @@
                                 <rect key="frame" x="130" y="139" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.24125685569999999" green="0.93544350679999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="&lt;17">
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -130,7 +130,7 @@
                                 <rect key="frame" x="130" y="265" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.64921560099999998" blue="0.21678315349999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="&lt;29">
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -142,7 +142,7 @@
                                 <rect key="frame" x="130" y="398" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.69833009883587671" green="0.44266817600886543" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="29&lt;">
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -150,15 +150,15 @@
                                     <segue destination="m6U-Te-CuF" kind="push" id="Dx6-Fc-fVe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="under 17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vg3-lG-JEA">
-                                <rect key="frame" x="132" y="207" width="56" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Under 17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vg3-lG-JEA">
+                                <rect key="frame" x="130" y="207" width="58" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="under 29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jmc-dm-OGu">
-                                <rect key="frame" x="131" y="333" width="59" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Under 29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jmc-dm-OGu">
+                                <rect key="frame" x="129" y="333" width="61" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -264,10 +264,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give access to App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VMq-wo-nE6">
+                                <rect key="frame" x="98" y="205" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set location accuracy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eii-7D-b7B">
+                                <rect key="frame" x="-45" y="65" width="411" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18573277229999999" green="0.95918166039999997" blue="0.68809076130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PbG-3v-yrK">
                                 <rect key="frame" x="130" y="137" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59607843137254901" green="0.27058823529411763" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.22352941176470589" green="0.92941176470588238" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" image="location">
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
@@ -276,21 +291,6 @@
                                     <segue destination="udm-qu-Qx9" kind="push" id="PmC-WL-Vld"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VMq-wo-nE6">
-                                <rect key="frame" x="143" y="205" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set location accuracy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eii-7D-b7B">
-                                <rect key="frame" x="0.0" y="65" width="320" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18573277229999999" green="0.95918166039999997" blue="0.68809076130000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -298,13 +298,14 @@
                     <connections>
                         <outlet property="locationButton" destination="PbG-3v-yrK" id="NfE-DW-2KN"/>
                         <outlet property="locationLabel" destination="VMq-wo-nE6" id="ebE-yY-LcB"/>
+                        <outlet property="question4Label" destination="Eii-7D-b7B" id="Z4w-Px-DkD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCM-59-UXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1923" y="1066"/>
         </scene>
-        <!--Main Menu-->
+        <!--Main-->
         <scene sceneID="nkO-Mx-Z9F">
             <objects>
                 <viewController id="udm-qu-Qx9" customClass="MainViewController" customModule="Bling" customModuleProvider="target" sceneMemberID="viewController">
@@ -357,7 +358,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Menu" id="IlF-zw-2rE"/>
+                    <navigationItem key="navigationItem" title="Main" id="IlF-zw-2rE"/>
                     <connections>
                         <outlet property="chatButton" destination="1P9-sN-t15" id="yMn-1T-unp"/>
                         <outlet property="chatLabel" destination="Kog-m3-BTW" id="ikX-l6-6YM"/>
@@ -415,6 +416,7 @@ get in touch with you.</string>
                     <connections>
                         <outlet property="agreeButton" destination="LcY-fb-E4J" id="YvI-Hc-hox"/>
                         <outlet property="emergencyNewButton" destination="9oZ-7d-C5s" id="u4H-iG-Ur0"/>
+                        <outlet property="explainTextView" destination="Gfa-0F-KDh" id="nYd-c5-pW8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSg-8T-e4V" userLabel="First Responder" sceneMemberID="firstResponder"/>

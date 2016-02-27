@@ -19,9 +19,6 @@ class AgeViewController: UIViewController {
     @IBOutlet weak var question2Label: UILabel!
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

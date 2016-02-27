@@ -29,7 +29,7 @@ class ContactViewController: UIViewController {
         labelCenter.y += CGFloat(100) //add the distance that the first button will go at animation + the distance between the label and the button
 
         
-        labelCenter.y += CGFloat(-375) //
+        labelCenter.y += CGFloat(-345) //
         question3Label.center = labelCenter
 
         
