@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lsa-Lj-QVU">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
             </objects>
             <point key="canvasLocation" x="162.40000000000001" y="316.65999999999997"/>
         </scene>
-        <!--Gender View Controller-->
+        <!--Gender-->
         <scene sceneID="4sZ-kz-iC1">
             <objects>
                 <viewController id="R32-mf-9gn" customClass="GenderViewController" customModule="Bling" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your gender." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8F6-ei-Xq9">
-                                <rect key="frame" x="-45" y="65" width="411" height="42"/>
+                                <rect key="frame" x="-45" y="64" width="411" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.185732772307034" green="0.95918166035353536" blue="0.68809076133772118" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -92,21 +91,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="c0a-qO-1jg"/>
+                    <navigationItem key="navigationItem" title="Gender" id="c0a-qO-1jg"/>
                     <connections>
                         <outlet property="femaleButton" destination="xsx-Mf-IH0" id="khE-rC-mbi"/>
-                        <outlet property="femaleLabel" destination="5BP-2y-5k9" id="F2i-r6-vq0"/>
+                        <outlet property="femaleLabel" destination="5BP-2y-5k9" id="me1-ZF-j8y"/>
                         <outlet property="maleButton" destination="Vo3-Rs-gWQ" id="aLd-2P-spj"/>
-                        <outlet property="maleLabel" destination="WJI-0x-Wcx" id="rkC-R1-0kY"/>
+                        <outlet property="maleLabel" destination="WJI-0x-Wcx" id="LVF-vY-0xI"/>
                         <outlet property="naButton" destination="MZK-Em-b6Z" id="Hx8-LO-64D"/>
-                        <outlet property="naLabel" destination="5ab-DQ-hDu" id="qRf-Zd-TXv"/>
+                        <outlet property="naLabel" destination="5ab-DQ-hDu" id="Tcp-ll-KD7"/>
+                        <outlet property="questionLabel" destination="8F6-ei-Xq9" id="2n5-ZD-5Xl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTE-i4-HTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="1065"/>
         </scene>
-        <!--Age View Controller-->
+        <!--Age-->
         <scene sceneID="TjB-Cq-L9f">
             <objects>
                 <viewController id="2W2-ST-1dP" customClass="AgeViewController" customModule="Bling" customModuleProvider="target" sceneMemberID="viewController">
@@ -172,7 +172,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your age." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l01-FC-8tD">
-                                <rect key="frame" x="1" y="64" width="320" height="42"/>
+                                <rect key="frame" x="-45" y="64" width="411" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.18573277229999999" green="0.95918166039999997" blue="0.68809076130000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -182,10 +182,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Kof-je-TXj"/>
+                    <navigationItem key="navigationItem" title="Age" id="Kof-je-TXj"/>
                     <connections>
                         <outlet property="aboveLabel" destination="dgR-4c-KCi" id="UGs-je-2T6"/>
                         <outlet property="from30Button" destination="r9h-Vu-D94" id="zVd-Fg-xNK"/>
+                        <outlet property="question2Label" destination="l01-FC-8tD" id="5Ws-qj-r4l"/>
                         <outlet property="under17Button" destination="3pB-pf-aWY" id="Ma1-6N-em2"/>
                         <outlet property="under17Label" destination="vg3-lG-JEA" id="TQp-Pg-Td7"/>
                         <outlet property="under29Button" destination="qN5-ou-DaY" id="oeb-xo-MOC"/>
@@ -196,7 +197,7 @@
             </objects>
             <point key="canvasLocation" x="1107" y="1068"/>
         </scene>
-        <!--Contact View Controller-->
+        <!--Contact-->
         <scene sceneID="VdQ-sn-lyN">
             <objects>
                 <viewController id="m6U-Te-CuF" customClass="ContactViewController" customModule="Bling" customModuleProvider="target" sceneMemberID="viewController">
@@ -205,23 +206,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  Type phone number" textAlignment="natural" minimumFontSize="17" id="EON-gt-z3d">
-                                <rect key="frame" x="40" y="136" width="240" height="52"/>
+                                <rect key="frame" x="28" y="136" width="266" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22352941176470589" green="0.92941176470588238" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92808948863636365" green="0.92808948863636365" blue="0.92808948863636365" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.35568576388888884" green="0.35568576388888884" blue="0.35568576388888884" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  Re-type phone number" textAlignment="natural" minimumFontSize="17" id="GZa-Kn-97S">
-                                <rect key="frame" x="40" y="203" width="240" height="52"/>
+                                <rect key="frame" x="28" y="203" width="266" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22352941176470589" green="0.92941176470588238" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92808948863636365" green="0.92808948863636365" blue="0.92808948863636365" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.35568576388888884" green="0.35568576388888884" blue="0.35568576388888884" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AD1-N0-Czg">
-                                <rect key="frame" x="40" y="270" width="240" height="60"/>
+                                <rect key="frame" x="28" y="271" width="266" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274509803926" green="0.66382565518014502" blue="0.26347009925513176" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -233,7 +234,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o0U-6h-szp">
-                                <rect key="frame" x="1" y="64" width="320" height="42"/>
+                                <rect key="frame" x="-45" y="64" width="411" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.18573277229999999" green="0.95918166039999997" blue="0.68809076130000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -243,8 +244,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BIQ-79-m50"/>
+                    <navigationItem key="navigationItem" title="Contact" id="BIQ-79-m50"/>
                     <connections>
+                        <outlet property="phone1TextField" destination="EON-gt-z3d" id="HTj-KY-XhK"/>
+                        <outlet property="phone2TextField" destination="GZa-Kn-97S" id="bEi-31-Unt"/>
+                        <outlet property="question3Label" destination="o0U-6h-szp" id="pWc-LR-dEP"/>
                         <outlet property="submitButton" destination="AD1-N0-Czg" id="WjK-SY-eUu"/>
                     </connections>
                 </viewController>
@@ -252,7 +256,7 @@
             </objects>
             <point key="canvasLocation" x="1515" y="1068"/>
         </scene>
-        <!--Location View Controller-->
+        <!--Location-->
         <scene sceneID="rgw-wD-uOV">
             <objects>
                 <viewController id="4gX-4z-URb" customClass="LocationViewController" customModule="Bling" customModuleProvider="target" sceneMemberID="viewController">
@@ -290,7 +294,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MBQ-0V-Mhp"/>
+                    <navigationItem key="navigationItem" title="Location" id="MBQ-0V-Mhp"/>
                     <connections>
                         <outlet property="locationButton" destination="PbG-3v-yrK" id="NfE-DW-2KN"/>
                         <outlet property="locationLabel" destination="VMq-wo-nE6" id="ebE-yY-LcB"/>
@@ -300,7 +304,7 @@
             </objects>
             <point key="canvasLocation" x="1923" y="1066"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Main Menu-->
         <scene sceneID="nkO-Mx-Z9F">
             <objects>
                 <viewController id="udm-qu-Qx9" customClass="MainViewController" customModule="Bling" customModuleProvider="target" sceneMemberID="viewController">
@@ -353,7 +357,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IlF-zw-2rE"/>
+                    <navigationItem key="navigationItem" title="Main Menu" id="IlF-zw-2rE"/>
                     <connections>
                         <outlet property="chatButton" destination="1P9-sN-t15" id="yMn-1T-unp"/>
                         <outlet property="chatLabel" destination="Kog-m3-BTW" id="ikX-l6-6YM"/>
@@ -367,7 +371,7 @@
             </objects>
             <point key="canvasLocation" x="1391" y="1795"/>
         </scene>
-        <!--Emergency View Controller-->
+        <!--Emergency-->
         <scene sceneID="jHy-I5-1rF">
             <objects>
                 <viewController id="ZOE-bq-Y4i" customClass="EmergencyViewController" customModule="Bling" customModuleProvider="target" sceneMemberID="viewController">
@@ -407,7 +411,7 @@ get in touch with you.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qwg-LW-Uwk"/>
+                    <navigationItem key="navigationItem" title="Emergency" id="qwg-LW-Uwk"/>
                     <connections>
                         <outlet property="agreeButton" destination="LcY-fb-E4J" id="YvI-Hc-hox"/>
                         <outlet property="emergencyNewButton" destination="9oZ-7d-C5s" id="u4H-iG-Ur0"/>
