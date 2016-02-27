@@ -12,7 +12,9 @@ class GenderViewController: UIViewController {
     @IBOutlet weak var femaleButton: UIButton!
     @IBOutlet weak var naButton: UIButton!
     
-    
+    @IBOutlet weak var maleLabel: UILabel!
+    @IBOutlet weak var femaleLabel: UILabel!
+    @IBOutlet weak var naLabel: UILabel!
     
     
     

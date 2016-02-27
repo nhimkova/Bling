@@ -8,7 +8,9 @@ class EmergencyViewController: UIViewController {
     
     //Link UI elements here
     
+    @IBOutlet weak var emergencyNewButton: UIButton!
     
+    @IBOutlet weak var agreeButton: UIButton!
     
     
     
