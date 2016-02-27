@@ -16,6 +16,13 @@
 		088E47971C81AC300069C6FD /* BlingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47961C81AC300069C6FD /* BlingUITests.swift */; };
 		088E47A51C81AD640069C6FD /* QredoXDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E47A41C81AD640069C6FD /* QredoXDK.framework */; };
 		088E47A61C81AD640069C6FD /* QredoXDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 088E47A41C81AD640069C6FD /* QredoXDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		088E47AA1C81B5390069C6FD /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47A91C81B5390069C6FD /* GenderViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47AC1C81B54B0069C6FD /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47AB1C81B54B0069C6FD /* AgeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47AE1C81B55C0069C6FD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47AD1C81B55C0069C6FD /* ContactViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47B01C81B56B0069C6FD /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47AF1C81B56B0069C6FD /* LocationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47B21C81B57E0069C6FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47B11C81B57E0069C6FD /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47B41C81B5920069C6FD /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47B31C81B5920069C6FD /* LaunchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		088E47B61C81B5A10069C6FD /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E47B51C81B5A10069C6FD /* EmergencyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,13 @@
 		088E47981C81AC300069C6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		088E47A41C81AD640069C6FD /* QredoXDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QredoXDK.framework; sourceTree = "<group>"; };
 		088E47A81C81ADA20069C6FD /* Bling-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bling-Bridging-Header.h"; sourceTree = "<group>"; };
+		088E47A91C81B5390069C6FD /* GenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		088E47AB1C81B54B0069C6FD /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		088E47AD1C81B55C0069C6FD /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		088E47AF1C81B56B0069C6FD /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		088E47B11C81B57E0069C6FD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		088E47B31C81B5920069C6FD /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		088E47B51C81B5A10069C6FD /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +131,7 @@
 		088E47751C81AC2F0069C6FD /* Bling */ = {
 			isa = PBXGroup;
 			children = (
+				088E47B71C81B5C20069C6FD /* ViewControllers */,
 				088E47761C81AC2F0069C6FD /* AppDelegate.swift */,
 				088E47781C81AC2F0069C6FD /* ViewController.swift */,
 				088E477A1C81AC2F0069C6FD /* Main.storyboard */,
@@ -144,6 +159,20 @@
 				088E47981C81AC300069C6FD /* Info.plist */,
 			);
 			path = BlingUITests;
+			sourceTree = "<group>";
+		};
+		088E47B71C81B5C20069C6FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				088E47A91C81B5390069C6FD /* GenderViewController.swift */,
+				088E47AB1C81B54B0069C6FD /* AgeViewController.swift */,
+				088E47AD1C81B55C0069C6FD /* ContactViewController.swift */,
+				088E47AF1C81B56B0069C6FD /* LocationViewController.swift */,
+				088E47B11C81B57E0069C6FD /* MainViewController.swift */,
+				088E47B31C81B5920069C6FD /* LaunchViewController.swift */,
+				088E47B51C81B5A10069C6FD /* EmergencyViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088E47B21C81B57E0069C6FD /* MainViewController.swift in Sources */,
+				088E47AA1C81B5390069C6FD /* GenderViewController.swift in Sources */,
 				088E47791C81AC2F0069C6FD /* ViewController.swift in Sources */,
+				088E47AC1C81B54B0069C6FD /* AgeViewController.swift in Sources */,
+				088E47B01C81B56B0069C6FD /* LocationViewController.swift in Sources */,
+				088E47B61C81B5A10069C6FD /* EmergencyViewController.swift in Sources */,
 				088E47771C81AC2F0069C6FD /* AppDelegate.swift in Sources */,
+				088E47AE1C81B55C0069C6FD /* ContactViewController.swift in Sources */,
+				088E47B41C81B5920069C6FD /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
