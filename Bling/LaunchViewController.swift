@@ -9,9 +9,9 @@ class LaunchViewController: UIViewController {
     //Link UI elements here
     
     
-    
-    
-    
+   
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var logoTextField: UITextField!
     
     
     override func viewDidLoad() {
@@ -23,18 +23,29 @@ class LaunchViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         //Initial settings of UI elements
         
+        logoImageView.center.y = CGFloat(300)
+        logoImageView.center.x = CGFloat(0)
         
+        logoTextField.center.y = CGFloat(360)
+        logoTextField.center.x = CGFloat(370)
         
-        
-        
-        
+        logoImageView.alpha = 0
+        logoTextField.alpha = 0
+
         
     } //End of viewWillAppear
     
     override func viewDidAppear(animated: Bool) {
         //animations
         
-        
+        UIView.animateWithDuration(0.4, delay: 1, options: [], animations: {
+            self.logoImageView.center.x += 185
+            self.logoImageView.alpha = 1
+            
+            }, completion: { (success: Bool) in
+                self.logoTextField.center.x = 185
+                self.logoTextField.alpha = 1
+        })
         
         
     }//End of viewDidAppear
