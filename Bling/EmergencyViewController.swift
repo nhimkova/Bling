@@ -28,29 +28,34 @@ class EmergencyViewController: UIViewController {
         
         
         var buttonCenter = emergencyNewButton.center
-        buttonCenter.y = CGFloat(170)
+        buttonCenter.y = CGFloat(150)
         buttonCenter.x = CGFloat(185)
         
         emergencyNewButton.center = buttonCenter
         
+        buttonCenter.y = CGFloat(520)
+        agreeButton.center = buttonCenter
+        
         // Set all buttons to be transparent
         emergencyNewButton.alpha = 0
-        explainTextView.alpha = 1
-        
+        explainTextView.alpha = 0.8
+        agreeButton.alpha = 1
         
         // Set all buttons to be round
         emergencyNewButton.layer.cornerRadius = 30
         emergencyNewButton.clipsToBounds = true
         
+        agreeButton.layer.cornerRadius = 26
         
         //Set text label position
         var labelCenter = emergencyNewButton.center // we start at the position of the buttons
-        labelCenter.y += CGFloat(220) //add the distance that the first button will go at animation + the distance between the label and the button
+        labelCenter.y += CGFloat(200) //add the distance that the first button will go at animation + the distance between the label and the button
         
         explainTextView.center = labelCenter
         
         labelCenter.y += CGFloat(00) //
         explainTextView.center = labelCenter
+
         
         
         
@@ -59,7 +64,7 @@ class EmergencyViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         //animations
         UIView.animateWithDuration(0.2, delay: 0, options: [], animations: {
-            self.emergencyNewButton.center.y += 100
+            self.emergencyNewButton.center.y += 60
             self.emergencyNewButton.alpha = 1
             
             }, completion: { (success: Bool) in

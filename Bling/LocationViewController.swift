@@ -45,11 +45,15 @@ class LocationViewController: UIViewController {
         var labelCenter = locationButton.center // we start at the position of the buttons
         labelCenter.y += CGFloat(100) //add the distance that the first button will go at animation + the distance between the label and the button
         
+        labelCenter.y += CGFloat(120) //
         locationLabel.center = labelCenter
 
-        labelCenter.y += CGFloat(-185) //
+        labelCenter.y += CGFloat(-305) //
         question4Label.center = labelCenter
         
+        // Set labels to be transparent
+        locationLabel.alpha = 0
+       
         
         
     } //End of viewWillAppear
@@ -57,7 +61,7 @@ class LocationViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         //animations
         
-        UIView.animateWithDuration(0.2, delay: 0, options: [], animations: {
+        UIView.animateWithDuration(0.4, delay: 0, options: [], animations: {
             self.locationButton.center.y += 180
             self.locationButton.alpha = 1
             

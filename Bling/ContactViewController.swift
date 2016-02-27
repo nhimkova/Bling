@@ -18,19 +18,30 @@ class ContactViewController: UIViewController {
         super.viewDidLoad()
         //Set original places of buttons
         var buttonCenter = submitButton.center
-        buttonCenter.y = CGFloat(330)
+        buttonCenter.y = CGFloat(360)
         buttonCenter.x = CGFloat(185)
         
         submitButton.center = buttonCenter
+        
+        let textFieldCenterX = submitButton.center.x
+        phone1TextField.center.x = textFieldCenterX
+        phone2TextField.center.x = textFieldCenterX
+        
+        
         submitButton.alpha = 1
         
         //Set text label position
-        var labelCenter = submitButton.center // we start at the position of the buttons
-        labelCenter.y += CGFloat(100) //add the distance that the first button will go at animation + the distance between the label and the button
+        var labelCenter = submitButton.center // we start at the position of the button
 
         
-        labelCenter.y += CGFloat(-345) //
+        labelCenter.y = CGFloat(85) //
         question3Label.center = labelCenter
+        
+        labelCenter.y += CGFloat(120) //
+        phone1TextField.center = labelCenter
+
+        labelCenter.y += CGFloat(67) //
+        phone2TextField.center = labelCenter
 
         
         
