@@ -8,7 +8,9 @@ class LocationViewController: UIViewController {
     
     //Link UI elements here
     
+    @IBOutlet weak var locationButton: UIButton!
     
+    @IBOutlet weak var locationLabel: UILabel!
     
     
     

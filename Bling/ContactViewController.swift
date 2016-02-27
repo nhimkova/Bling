@@ -8,6 +8,7 @@ class ContactViewController: UIViewController {
     
     //Link UI elements here
     
+    @IBOutlet weak var submitButton: UIButton!
     
     
     

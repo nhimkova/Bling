@@ -8,10 +8,14 @@ class MainViewController: UIViewController {
     
     //Link UI elements here
     
+    @IBOutlet weak var chatButton: UIButton!
+    @IBOutlet weak var emergencyButton: UIButton!
+    @IBOutlet weak var faqButton: UIButton!
     
     
-    
-    
+    @IBOutlet weak var chatLabel: UILabel!
+    @IBOutlet weak var emergencyLabel: UILabel!
+    @IBOutlet weak var faqLabel: UILabel!
     
     
     override func viewDidLoad() {

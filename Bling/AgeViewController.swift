@@ -12,6 +12,10 @@ class AgeViewController: UIViewController {
     @IBOutlet weak var under29Button: UIButton!
     @IBOutlet weak var from30Button: UIButton!
     
+    @IBOutlet weak var under17Label: UILabel!
+    @IBOutlet weak var under29Label: UILabel!
+    @IBOutlet weak var aboveLabel: UILabel!
+   
     
     
     
