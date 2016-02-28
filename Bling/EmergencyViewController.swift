@@ -30,6 +30,7 @@ class EmergencyViewController: UIViewController, QredoConversationObserver {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //This tag can be replaced by a general helpline emergency tag
         respondToRendezvous("index")
         
         

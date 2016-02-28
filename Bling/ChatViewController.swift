@@ -22,9 +22,6 @@ class ChatViewController: UIViewController,
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
-    var client       : QredoClient?
     var rendezvous   : QredoRendezvous?
     var conversation : QredoConversation?
     
@@ -41,36 +38,15 @@ class ChatViewController: UIViewController,
     
     override func viewDidLoad() {
         
-        // replace appSecret with the Qredo supplied appSecret given to you when you registered
-        // replace userID and userSecret with values to be used for testing
-        // these credentials will be provided by the user, see the tutorial for more information
-        // replace the bundle identifier in build settings with your own appID
-        
-        let appSecret = "215123b8dd"
-        let userID =  "tutorialuser@test.com"
-        let userSecret = "!%usertutorialPassword"
-        
         subscribeKeyboardNotifications()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         
-        QredoClient.initializeWithAppSecret(appSecret, userId: userID, userSecret: userSecret) { (client, error) -> Void in
-            if error != nil {
-                // handle error
-                self.showMessage ("Authorize failed with error",
-                    message: error.localizedDescription,
-                    completionBlock: { () -> Void in
-                        return })
-                return
-            }
-            self.client = client
-            
-            if (self.isRendezvousCreator) {
-                self.createRendezvous(self.chatId)
-            } else {
-                self.respondToRendezvous(self.chatId)
-            }
+        if (isRendezvousCreator) {
+            createRendezvous(self.chatId)
+        } else {
+            respondToRendezvous(self.chatId)
         }
     }
     
@@ -125,7 +101,7 @@ class ChatViewController: UIViewController,
     
     func createRendezvous (tag: String)
     {
-        self.client?.createAnonymousRendezvousWithTag(tag,
+        MyQredo.sharedInstance().client?.createAnonymousRendezvousWithTag(tag,
             completionHandler: {(createdRendezvous, error) ->Void in
                 
                 if error != nil {
@@ -144,7 +120,7 @@ class ChatViewController: UIViewController,
     
     func respondToRendezvous(tag: String)
     {
-        self.client?.respondWithTag(tag, completionHandler:
+        MyQredo.sharedInstance().client?.respondWithTag(tag, completionHandler:
             {(conversation, error) -> Void in
                 if (error != nil)
                 {
