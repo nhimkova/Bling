@@ -87,5 +87,57 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
+    //Qredo Vault methods
+    
+    func showMessage(title: String, message: String, completionBlock: () -> Void) {
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: "OK action"),
+                style: UIAlertActionStyle.Default,
+                handler: { (action) -> Void in
+                    completionBlock()
+            })
+            
+            alertController.addAction(okAction)
+            self.presentViewController(alertController, animated: true, completion: nil)
+        })
+        
+    }
+    
+    func putItemInVault(infoKey: NSString!, infoValue: NSString!) {
+        
+        if let vault = MyQredo.sharedInstance().client?.defaultVault() {
+            let metadata = QredoVaultItemMetadata(
+                summaryValues: [infoKey : infoValue])
+            
+            let vaultValue = "Test string".dataUsingEncoding(NSUTF8StringEncoding,
+                allowLossyConversion: true)
+            
+            let vaultItem = QredoVaultItem(metadata: metadata, value: vaultValue)
+            
+            vault.putItem(vaultItem, completionHandler:
+                { (newVaultItemMetadata, error)
+                    -> Void in
+                    if error != nil {
+                        self.showMessage("Put failed with error",
+                            message: error.localizedDescription,
+                            completionBlock: { () -> Void in
+                                return
+                        })
+                        return
+                    }
+                    // tell the user the item has been added
+                    print("Item added to the vault")
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.performSegueWithIdentifier("goToContact", sender: self)
+                    })
+            })
+            
+        }
+    }
+    
+    
     
 } //End of class

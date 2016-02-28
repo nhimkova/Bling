@@ -14,13 +14,16 @@ class MyQredo: NSObject {
     var rendezvous   : QredoRendezvous?
     var conversation : QredoConversation?
     
-    static let appSecret = "215123b8dd"
-    static let userID =  "tutorialuser@test.com"
-    static let userSecret = "!%usertutorialPassword"
+    struct Constants {
+        static let appSecret = "215123b8dd"
+        static let userID =  "tutorialuser@test.com"
+        static let userSecret = "!%usertutorialPassword"
+    }
     
     override init() {
-        
-        
+        client = nil
+        rendezvous = nil
+        conversation = nil
         super.init()
     }
     
@@ -36,6 +39,6 @@ class MyQredo: NSObject {
     }
     
     
-
+    
     
 }

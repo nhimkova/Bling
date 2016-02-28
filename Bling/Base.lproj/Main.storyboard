@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Launch View Controller-->
@@ -66,7 +66,7 @@
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2W2-ST-1dP" kind="push" id="JUn-9x-8W8"/>
+                                    <action selector="didPushFemale:" destination="R32-mf-9gn" eventType="touchUpInside" id="mL0-zF-l4A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MZK-Em-b6Z">
@@ -78,7 +78,7 @@
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2W2-ST-1dP" kind="push" id="ycA-K4-hfb"/>
+                                    <action selector="didPushNoGender:" destination="R32-mf-9gn" eventType="touchUpInside" id="gbL-CZ-7OE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vo3-Rs-gWQ">
@@ -90,7 +90,7 @@
                                     <color key="titleColor" red="0.93721512265529683" green="0.97254901960784312" blue="0.93920259202571121" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2W2-ST-1dP" kind="push" id="w8q-wZ-kHX"/>
+                                    <action selector="didPushMale:" destination="R32-mf-9gn" eventType="touchUpInside" id="GGE-vJ-RS5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WJI-0x-Wcx">
@@ -130,6 +130,7 @@
                         <outlet property="naButton" destination="MZK-Em-b6Z" id="Hx8-LO-64D"/>
                         <outlet property="naLabel" destination="5ab-DQ-hDu" id="Tcp-ll-KD7"/>
                         <outlet property="questionLabel" destination="8F6-ei-Xq9" id="2n5-ZD-5Xl"/>
+                        <segue destination="2W2-ST-1dP" kind="push" identifier="goToAge" id="UTL-Ul-Psz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTE-i4-HTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,7 +155,7 @@
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="m6U-Te-CuF" kind="push" id="pBZ-dT-uIS"/>
+                                    <action selector="didPush17:" destination="2W2-ST-1dP" eventType="touchUpInside" id="dlJ-QZ-kVJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qN5-ou-DaY">
@@ -167,7 +168,7 @@
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="m6U-Te-CuF" kind="push" id="4uy-Tb-3Rt"/>
+                                    <action selector="didPush29:" destination="2W2-ST-1dP" eventType="touchUpInside" id="31I-67-6Uo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r9h-Vu-D94">
@@ -180,7 +181,7 @@
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="m6U-Te-CuF" kind="push" id="Dx6-Fc-fVe"/>
+                                    <action selector="didPushAbove:" destination="2W2-ST-1dP" eventType="touchUpInside" id="G6v-my-sYV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Under 17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vg3-lG-JEA">
@@ -229,6 +230,7 @@
                         <outlet property="under17Label" destination="vg3-lG-JEA" id="TQp-Pg-Td7"/>
                         <outlet property="under29Button" destination="qN5-ou-DaY" id="oeb-xo-MOC"/>
                         <outlet property="under29Label" destination="Jmc-dm-OGu" id="xJ2-W0-qjy"/>
+                        <segue destination="m6U-Te-CuF" kind="push" identifier="goToContact" id="W6u-cr-xuP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evd-Xo-BFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -243,7 +245,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  Type phone number" textAlignment="natural" minimumFontSize="17" id="EON-gt-z3d">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Type phone number" textAlignment="natural" minimumFontSize="17" id="EON-gt-z3d">
                                 <rect key="frame" x="28" y="136" width="266" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -252,7 +254,7 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  Re-type phone number" textAlignment="natural" minimumFontSize="17" id="GZa-Kn-97S">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Re-type phone number" textAlignment="natural" minimumFontSize="17" id="GZa-Kn-97S">
                                 <rect key="frame" x="28" y="203" width="266" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -271,7 +273,7 @@
                                     <color key="titleColor" red="0.93721512269999996" green="0.97254901959999995" blue="0.939202592" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4gX-4z-URb" kind="push" id="arb-U1-uU7"/>
+                                    <action selector="didPushSubmitButton:" destination="m6U-Te-CuF" eventType="touchUpInside" id="d4y-E7-hDc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o0U-6h-szp">
@@ -293,6 +295,7 @@
                         <outlet property="phone2TextField" destination="GZa-Kn-97S" id="bEi-31-Unt"/>
                         <outlet property="question3Label" destination="o0U-6h-szp" id="pWc-LR-dEP"/>
                         <outlet property="submitButton" destination="AD1-N0-Czg" id="WjK-SY-eUu"/>
+                        <segue destination="4gX-4z-URb" kind="push" identifier="goToLocation" id="HlI-3S-xAx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kol-q7-30F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -346,7 +349,7 @@
                         <outlet property="locationButton" destination="PbG-3v-yrK" id="NfE-DW-2KN"/>
                         <outlet property="locationLabel" destination="VMq-wo-nE6" id="ebE-yY-LcB"/>
                         <outlet property="question4Label" destination="Eii-7D-b7B" id="Z4w-Px-DkD"/>
-                        <segue destination="pXa-nf-a1F" kind="modal" identifier="GoToMain" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="NbD-JJ-Z18"/>
+                        <segue destination="pXa-nf-a1F" kind="modal" identifier="GoToMain" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="NbD-JJ-Z18"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCM-59-UXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -364,6 +367,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Can I get help anytime of the day?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZRY-0q-evB">
                                 <rect key="frame" x="-5" y="64" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.3238044507575758" green="0.3238044507575758" blue="0.3238044507575758" alpha="1" colorSpace="calibratedRGB"/>
@@ -372,6 +376,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     How do you store my information?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fSQ-Zi-fnq">
                                 <rect key="frame" x="-5" y="131" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -380,6 +385,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     What is an Emergency Button?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TO8-kQ-rqr">
                                 <rect key="frame" x="-5" y="198" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -388,6 +394,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Who am I talking to while chatting?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XiX-w2-ubk">
                                 <rect key="frame" x="-5" y="265" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -396,6 +403,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Are your representatives qualified?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQH-r0-Q0F">
                                 <rect key="frame" x="-5" y="332" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -404,6 +412,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Why do you need to know my age and gender?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7fi-lb-EcV">
                                 <rect key="frame" x="-5" y="399" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -412,6 +421,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     How can I make an appointment with you?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aro-b3-ea5">
                                 <rect key="frame" x="-5" y="466" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -420,6 +430,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     What is Bling and how did it start?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pkf-X9-Sfb">
                                 <rect key="frame" x="-5" y="533" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -428,12 +439,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Who is the organisation behind Bling?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DkQ-1Z-yFz">
                                 <rect key="frame" x="-5" y="600" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.96827651515151514" green="0.96827651515151514" blue="0.96827651515151514" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Faq" id="ccR-b2-AIT"/>
@@ -453,6 +466,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Main Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HS7-vg-z0J">
                                 <rect key="frame" x="-6" y="86" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -461,6 +475,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     My Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jde-6f-0Qo">
                                 <rect key="frame" x="-6" y="153" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -469,6 +484,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p3D-Ob-2Ye">
                                 <rect key="frame" x="-6" y="220" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -477,6 +493,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Terms and Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LIh-Uj-XrN">
                                 <rect key="frame" x="-6" y="287" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -485,6 +502,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SfV-aY-SD5">
                                 <rect key="frame" x="-6" y="354" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -493,12 +511,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Rate this App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MUx-Wh-XrV">
                                 <rect key="frame" x="-6" y="421" width="411" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.32380445079999998" green="0.32380445079999998" blue="0.32380445079999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
@@ -601,14 +621,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="VoU-sr-8b5" customClass="ChatTableViewCell" customModule="Bling" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VoU-sr-8b5" id="r8N-hF-AWe">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OutGoing" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IHS-IN-81y">
-                                                    <rect key="frame" x="238" y="8" width="74" height="24"/>
+                                                    <rect key="frame" x="73" y="8" width="239" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -616,7 +636,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incoming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kJA-AG-8ui">
-                                                    <rect key="frame" x="8" y="11" width="71" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="229" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -710,6 +730,9 @@ Our representtive will get in touch with you shortly.</string>
                                 <state key="normal" title="I agree with sharing my data">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPushSendEmergency:" destination="ZOE-bq-Y4i" eventType="touchUpInside" id="liE-aV-FT8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -777,8 +800,4 @@ Our representtive will get in touch with you shortly.</string>
         <image name="male" width="29" height="29"/>
         <image name="n:a" width="29" height="28"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="JUn-9x-8W8"/>
-        <segue reference="pBZ-dT-uIS"/>
-    </inferredMetricsTieBreakers>
 </document>

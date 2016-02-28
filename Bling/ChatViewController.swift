@@ -52,6 +52,9 @@ class ChatViewController: UIViewController,
         
         subscribeKeyboardNotifications()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
         QredoClient.initializeWithAppSecret(appSecret, userId: userID, userSecret: userSecret) { (client, error) -> Void in
             if error != nil {
                 // handle error
@@ -288,6 +291,10 @@ class ChatViewController: UIViewController,
         return true
     }
     
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
 }
 
 // MARK: UITableView Delegate
