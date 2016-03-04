@@ -49,7 +49,8 @@ class GenderViewController: UIViewController {
          //Set original places of buttons
         var buttonCenter = maleButton.center
         buttonCenter.y = CGFloat(170)
-        buttonCenter.x = CGFloat(185)
+        //buttonCenter.x = CGFloat(185)
+        buttonCenter.x = UIScreen.mainScreen().bounds.width/2
         
         maleButton.center = buttonCenter
         femaleButton.center = buttonCenter
@@ -72,7 +73,7 @@ class GenderViewController: UIViewController {
         
         //Set text label position
         var labelCenter = maleButton.center // we start at the position of the buttons
-        labelCenter.y += CGFloat(100) //add the distance that the first button will go at animation + the distance between the label and the button
+        labelCenter.y += CGFloat(70) //add the distance that the first button will go at animation + the distance between the label and the button
         maleLabel.center = labelCenter
         
         labelCenter.y += CGFloat(120) //
@@ -81,7 +82,7 @@ class GenderViewController: UIViewController {
         labelCenter.y += CGFloat(120) //
         naLabel.center = labelCenter
         
-        labelCenter.y += CGFloat(-425) //
+        labelCenter.y = CGFloat(85) //
         questionLabel.center = labelCenter
         
         // Set labels to be transparent
@@ -100,7 +101,7 @@ class GenderViewController: UIViewController {
         //animations
         
         UIView.animateWithDuration(0.2, delay: 0, options: [], animations: {
-            self.maleButton.center.y += 60
+            self.maleButton.center.y += 30
             self.maleButton.alpha = 1
             
             }, completion: { (success: Bool) in
@@ -109,7 +110,7 @@ class GenderViewController: UIViewController {
         })
         
         UIView.animateWithDuration(0.4, delay: 0.2, options: [], animations: {
-            self.femaleButton.center.y += 180
+            self.femaleButton.center.y += 150
             self.femaleButton.alpha = 1
             
             }, completion: { (success: Bool) in
@@ -119,7 +120,7 @@ class GenderViewController: UIViewController {
         
         UIView.animateWithDuration(0.6, delay: 0.4, options: [], animations: {
             
-            self.naButton.center.y += 300
+            self.naButton.center.y += 270
             self.naButton.alpha = 1
             
             }, completion: { (success: Bool) in

@@ -28,7 +28,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         
         var buttonCenter = locationButton.center
         buttonCenter.y = CGFloat(170)
-        buttonCenter.x = CGFloat(185)
+        //buttonCenter.x = CGFloat(185)
+        buttonCenter.x = UIScreen.mainScreen().bounds.width/2
         
         locationButton.center = buttonCenter
         
@@ -44,12 +45,10 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         
         //Set text label position
         var labelCenter = locationButton.center // we start at the position of the buttons
-        labelCenter.y += CGFloat(100) //add the distance that the first button will go at animation + the distance between the label and the button
-        
-        labelCenter.y += CGFloat(120) //
+        labelCenter.y += CGFloat(180) //add the distance that the first button will go at animation + the distance between the label and the button
         locationLabel.center = labelCenter
 
-        labelCenter.y += CGFloat(-305) //
+        labelCenter.y = CGFloat(85) //
         question4Label.center = labelCenter
         
         // Set labels to be transparent
@@ -63,7 +62,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         //animations
         
         UIView.animateWithDuration(0.4, delay: 0, options: [], animations: {
-            self.locationButton.center.y += 180
+            self.locationButton.center.y += 140
             self.locationButton.alpha = 1
             
             }, completion: { (success: Bool) in

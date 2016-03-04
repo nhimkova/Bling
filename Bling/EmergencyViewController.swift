@@ -42,12 +42,13 @@ class EmergencyViewController: UIViewController, QredoConversationObserver {
         
         
         var buttonCenter = emergencyNewButton.center
-        buttonCenter.y = CGFloat(150)
-        buttonCenter.x = CGFloat(185)
+        buttonCenter.y = CGFloat(130)
+        //buttonCenter.x = CGFloat(185)
+        buttonCenter.x = UIScreen.mainScreen().bounds.width/2
         
         emergencyNewButton.center = buttonCenter
         
-        buttonCenter.y = CGFloat(520)
+        buttonCenter.y = CGFloat(470)
         agreeButton.center = buttonCenter
         
         // Set all buttons to be transparent

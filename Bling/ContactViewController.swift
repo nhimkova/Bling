@@ -19,7 +19,8 @@ class ContactViewController: UIViewController {
         //Set original places of buttons
         var buttonCenter = submitButton.center
         buttonCenter.y = CGFloat(360)
-        buttonCenter.x = CGFloat(185)
+        //buttonCenter.x = CGFloat(185)
+        buttonCenter.x = UIScreen.mainScreen().bounds.width/2
         
         submitButton.center = buttonCenter
         

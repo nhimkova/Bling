@@ -29,7 +29,8 @@ class MainViewController: UIViewController {
         
         var buttonCenter = chatButton.center
         buttonCenter.y = CGFloat(100)
-        buttonCenter.x = CGFloat(185)
+        //buttonCenter.x = CGFloat(185)
+        buttonCenter.x = UIScreen.mainScreen().bounds.width/2
         
         chatButton.center = buttonCenter
         emergencyButton.center = buttonCenter
@@ -52,7 +53,7 @@ class MainViewController: UIViewController {
         
         //Set text label position
         var labelCenter = chatButton.center // we start at the position of the buttons
-        labelCenter.y += CGFloat(120) //add the distance that the first button will go at animation + the distance between the label and the button
+        labelCenter.y += CGFloat(110) //add the distance that the first button will go at animation + the distance between the label and the button
         chatLabel.center = labelCenter
         
         labelCenter.y += CGFloat(140) //
@@ -73,7 +74,7 @@ class MainViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         //animations
         UIView.animateWithDuration(0.2, delay: 0, options: [], animations: {
-            self.chatButton.center.y += 80
+            self.chatButton.center.y += 70
             self.chatButton.alpha = 1
             
             }, completion: { (success: Bool) in
@@ -82,7 +83,7 @@ class MainViewController: UIViewController {
         })
         
         UIView.animateWithDuration(0.4, delay: 0.2, options: [], animations: {
-            self.emergencyButton.center.y += 220
+            self.emergencyButton.center.y += 210
             self.emergencyButton.alpha = 1
             
             }, completion: { (success: Bool) in
@@ -92,7 +93,7 @@ class MainViewController: UIViewController {
         
         UIView.animateWithDuration(0.6, delay: 0.4, options: [], animations: {
             
-            self.faqButton.center.y += 360
+            self.faqButton.center.y += 350
             self.faqButton.alpha = 1
             
             }, completion: { (success: Bool) in

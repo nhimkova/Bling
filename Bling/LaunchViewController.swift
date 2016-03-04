@@ -41,11 +41,11 @@ class LaunchViewController: UIViewController {
         //animations
         
         UIView.animateWithDuration(0.4, delay: 1, options: [], animations: {
-            self.logoImageView.center.x += 185
+            self.logoImageView.center.x += UIScreen.mainScreen().bounds.width/2
             self.logoImageView.alpha = 1
             
             }, completion: { (success: Bool) in
-                self.logoTextField.center.x = 185
+                self.logoTextField.center.x = UIScreen.mainScreen().bounds.width/2
                 self.logoTextField.alpha = 1
         })
         
